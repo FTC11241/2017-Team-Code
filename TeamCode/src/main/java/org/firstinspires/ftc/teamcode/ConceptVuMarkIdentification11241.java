@@ -63,7 +63,7 @@ import org.firstinspires.ftc.robotcore.external.navigation.VuforiaTrackables;
  * Remove or comment out the @Disabled line to add this opmode to the Driver Station OpMode list.
  *
  * IMPORTANT: In order to use this OpMode, you need to obtain your own Vuforia license key as
- * is explained in {@link ConceptVuforiaNavigation}. Just a test of a change in comments
+ * is explained in {@link ConceptVuforiaNavigation}.
  */
 
 @Autonomous(name="Concept: VuMark Id", group ="Concept")
@@ -84,7 +84,7 @@ public class ConceptVuMarkIdentification11241 extends LinearOpMode {
 
         /*
          * To start up Vuforia, tell it the view that we wish to use for camera monitor (on the RC phone);
-         * If no camera monitor is desired, use the parameterless constructor instead (commented out below).
+         * If no camera monitor is desired, use the parameter less constructor instead (commented out below).
          */
         int cameraMonitorViewId = hardwareMap.appContext.getResources().getIdentifier("cameraMonitorViewId", "id", hardwareMap.appContext.getPackageName());
         VuforiaLocalizer.Parameters parameters = new VuforiaLocalizer.Parameters(cameraMonitorViewId);
@@ -93,16 +93,15 @@ public class ConceptVuMarkIdentification11241 extends LinearOpMode {
         // VuforiaLocalizer.Parameters parameters = new VuforiaLocalizer.Parameters();
 
         /*
-         * IMPORTANT: You need to obtain your own license key to use Vuforia. The string below with which
-         * 'parameters.vuforiaLicenseKey' is initialized is for illustration only, and will not function.
-         * A Vuforia 'Development' license key, can be obtained free of charge from the Vuforia developer
+         * IMPORTANT: Our TEAM Vuforia licence key is pasted between "Ac4ziN3//..." below
+         * Vuforia 'Development' license keys, can be obtained free of charge from the Vuforia developer
          * web site at https://developer.vuforia.com/license-manager.
          *
          * Vuforia license keys are always 380 characters long, and look as if they contain mostly
          * random data. As an example, here is a example of a fragment of a valid key:
          *      ... yIgIzTqZ4mWjk9wd3cZO9T1axEqzuhxoGlfOOI2dRzKS4T0hQ8kT ...
          * Once you've obtained a license key, copy the string from the Vuforia web site
-         * and paste it in to your code onthe next line, between the double quotes.
+         * and paste it in to your code on the next line, between the double quotes.
          */
         parameters.vuforiaLicenseKey = "Ac4ziN3/////AAAAGTsD0H73x05nq6wcRsez7GYrwsmg+WsZaODHq/Y/nc/AvI0Qbpyj6/QX6QAQe4ZLcNfZOrQ55apfBH5IPV6oPTdjULoRFX/JnTm5EDbQVT9Tpcoa5AuFR0CvBZ4ZRxVrPtxJ5G8L2dUTq5guuIsgxoiX2rQqjx+HIpZTRsKgf8sFhOzFie6R5u9w4RH+t2IAiX1BRvmvflRsfLLA+JnQVgAM/yIPOY20cdTN/l4hOqJme5wd9TCzHvVjvHXRHPTQAzDmO2E4y2gAeLuD9qSxEznk0KSIUqi+p2cV99eqEfmJCETePfokHX3/bhpWUIVWF+j83l4IHcW6pPZiSrrYP80GG/W4eZn7axZ3jD5l6lkT";
 
